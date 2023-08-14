@@ -16,7 +16,7 @@ export function CampaignDetails() {
         try {
 
             setCampaignData([]);
-            const address = "http://julienguilbaud-server.eddi.cloud:8080/api/campaigns/details/" + params.id;
+            const address = "https://maheut.alwaysdata.net/api/campaigns/details/" + params.id;
             const response = await fetch(address);
             const data = await response.json();
             setCampaignData(data);

@@ -20,7 +20,7 @@ export function UserCreate() {
     const doSearch = async () => {
         try {
             setGroupeData([]);
-            const address = "http://julienguilbaud-server.eddi.cloud:8080/api/group/" 
+            const address = "https://maheut.alwaysdata.net/api/group/" 
             const response = await fetch(address);
             const data = await response.json();
             setGroupeData(data);
@@ -60,7 +60,7 @@ export function UserCreate() {
 
 
         try {
-            const response = await fetch('http://julienguilbaud-server.eddi.cloud:8080/api/user/create', {
+            const response = await fetch('https://maheut.alwaysdata.net/api/user/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

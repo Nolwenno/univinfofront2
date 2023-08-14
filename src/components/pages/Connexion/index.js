@@ -31,7 +31,7 @@ export function Connexion() {
         console.log(newObject);
 
         try {
-            const response = await fetch('http://julienguilbaud-server.eddi.cloud:8080/api/login', {
+            const response = await fetch('https://maheut.alwaysdata.net/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

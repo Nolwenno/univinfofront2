@@ -21,7 +21,7 @@ export function ExchangeHome() {
         setSearchResult([]);
 
         try {
-            const address = "http://julienguilbaud-server.eddi.cloud:8080/api/contacts/" + searchValue;
+            const address = "https://maheut.alwaysdata.net/api/contacts/" + searchValue;
             const response = await fetch(address);
             const data = await response.json();
             setSearchResult(data);

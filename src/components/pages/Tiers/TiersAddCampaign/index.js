@@ -16,7 +16,7 @@ export function TiersAddCampaigns() {
     const doSearch = async () => {
         try {
             setCampaignData([]);
-            const address = "http://julienguilbaud-server.eddi.cloud:8080/api/campaigns/"
+            const address = "https://maheut.alwaysdata.net/api/campaigns/"
             const response = await fetch(address);
             const data = await response.json();
             setCampaignData(data);
@@ -52,7 +52,7 @@ export function TiersAddCampaigns() {
         };
         
         try {
-            const response = await fetch('http://julienguilbaud-server.eddi.cloud:8080/api/tierhascampaign/', {
+            const response = await fetch('https://maheut.alwaysdata.net/api/tierhascampaign/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

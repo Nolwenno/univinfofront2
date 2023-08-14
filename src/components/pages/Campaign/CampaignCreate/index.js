@@ -30,7 +30,7 @@ export function CampaignCreate() {
 
 
         try {
-            const response = await fetch('http://julienguilbaud-server.eddi.cloud:8080/api/campaign/create', {
+            const response = await fetch('https://maheut.alwaysdata.net/api/campaign/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
